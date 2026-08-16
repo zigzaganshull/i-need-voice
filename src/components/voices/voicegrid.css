@@ -1,0 +1,43 @@
+.voice-grid {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 25px;
+}
+
+.voice-grid__empty {
+  grid-column: 1 / -1;
+
+  padding: 100px 20px;
+
+  text-align: center;
+}
+
+.voice-grid__empty h3 {
+  font-size: 40px;
+
+  letter-spacing: -0.05em;
+}
+
+.voice-grid__empty p {
+  margin-top: 15px;
+
+  color: #777;
+}
+
+@media (max-width: 1000px) {
+
+  .voice-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}
+
+@media (max-width: 650px) {
+
+  .voice-grid {
+    grid-template-columns: 1fr;
+  }
+
+}

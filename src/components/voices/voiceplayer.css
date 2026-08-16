@@ -1,0 +1,123 @@
+.voice-player {
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+
+  gap: 15px;
+}
+
+.voice-player__button {
+  width: 42px;
+  height: 42px;
+
+  flex-shrink: 0;
+
+  border-radius: 50%;
+
+  background: #171717;
+  color: #fff;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 11px;
+
+  transition:
+    background 0.25s ease,
+    transform 0.25s ease;
+}
+
+.voice-player__button:hover {
+  background: var(--color-accent);
+
+  transform: scale(1.08);
+}
+
+.voice-player__button--playing {
+  background: var(--color-accent);
+}
+
+/* WAVEFORM */
+
+.voice-player__wave {
+  height: 35px;
+
+  flex: 1;
+
+  display: flex;
+  align-items: center;
+
+  gap: 3px;
+}
+
+.voice-player__wave span {
+  width: 3px;
+
+  height: 8px;
+
+  border-radius: 5px;
+
+  background: #bbb;
+
+  transition:
+    height 0.2s ease,
+    background 0.2s ease;
+}
+
+.voice-player__wave span:nth-child(2) {
+  height: 15px;
+}
+
+.voice-player__wave span:nth-child(3) {
+  height: 24px;
+}
+
+.voice-player__wave span:nth-child(4) {
+  height: 12px;
+}
+
+.voice-player__wave span:nth-child(5) {
+  height: 28px;
+}
+
+.voice-player__wave span:nth-child(6) {
+  height: 18px;
+}
+
+.voice-player__wave span:nth-child(7) {
+  height: 25px;
+}
+
+.voice-player__wave span:nth-child(8) {
+  height: 14px;
+}
+
+.voice-player__wave span:nth-child(9) {
+  height: 22px;
+}
+
+.voice-player__wave span:nth-child(10) {
+  height: 11px;
+}
+
+.voice-player__wave span:nth-child(11) {
+  height: 18px;
+}
+
+.voice-player__wave span:nth-child(12) {
+  height: 8px;
+}
+
+.voice-player__label {
+  flex-shrink: 0;
+
+  font-size: 9px;
+
+  font-weight: 800;
+
+  letter-spacing: 0.1em;
+
+  color: #777;
+}

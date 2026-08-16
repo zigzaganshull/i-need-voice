@@ -1,0 +1,246 @@
+.home-services {
+  width: 100%;
+
+  max-width: 1400px;
+
+  margin: 0 auto;
+
+  padding: 140px 5% 160px;
+}
+
+/* HEADER */
+
+.home-services__header {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  padding-bottom: 25px;
+
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+.home-services__label {
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  font-size: 9px;
+
+  font-weight: 800;
+
+  letter-spacing: 0.15em;
+}
+
+.home-services__label span {
+  width: 7px;
+
+  height: 7px;
+
+  border-radius: 50%;
+
+  background: var(--color-accent, #ff5a45);
+}
+
+.home-services__all {
+  color: #171717;
+
+  text-decoration: none;
+
+  font-size: 9px;
+
+  font-weight: 800;
+
+  letter-spacing: 0.1em;
+
+  transition: color 0.25s ease;
+}
+
+.home-services__all:hover {
+  color: var(--color-accent, #ff5a45);
+}
+
+/* TITLE */
+
+.home-services__title {
+  padding: 80px 0;
+}
+
+.home-services__title h2 {
+  margin: 0;
+
+  font-size: clamp(70px, 9vw, 140px);
+
+  line-height: 0.82;
+
+  letter-spacing: -0.08em;
+}
+
+.home-services__title em {
+  color: var(--color-accent, #ff5a45);
+
+  font-style: normal;
+}
+
+/* GRID */
+
+.home-services__grid {
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+
+  border-top: 1px solid rgba(0, 0, 0, 0.15);
+
+  border-left: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+.home-service-card {
+  min-height: 330px;
+
+  padding: 35px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: space-between;
+
+  color: #171717;
+
+  text-decoration: none;
+
+  border-right: 1px solid rgba(0, 0, 0, 0.15);
+
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+
+  transition:
+    background 0.35s ease,
+    color 0.35s ease;
+}
+
+.home-service-card:hover {
+  background: var(--color-accent, #ff5a45);
+
+  color: #fff;
+}
+
+.home-service-card__top {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  font-size: 10px;
+
+  font-weight: 800;
+
+  letter-spacing: 0.1em;
+}
+
+.home-service-card__arrow {
+  width: 45px;
+
+  height: 45px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  border: 1px solid rgba(0, 0, 0, 0.35);
+
+  border-radius: 50%;
+
+  font-size: 15px;
+
+  transition:
+    transform 0.3s ease,
+    background 0.3s ease,
+    color 0.3s ease;
+}
+
+.home-service-card:hover .home-service-card__arrow {
+  transform: rotate(45deg);
+
+  background: #fff;
+
+  color: var(--color-accent, #ff5a45);
+
+  border-color: #fff;
+}
+
+.home-service-card__content h3 {
+  margin: 0;
+
+  font-size: clamp(40px, 4vw, 65px);
+
+  line-height: 0.9;
+
+  letter-spacing: -0.06em;
+}
+
+.home-service-card__content p {
+  max-width: 400px;
+
+  margin: 20px 0 0;
+
+  font-size: 12px;
+
+  line-height: 1.7;
+
+  color: #777;
+
+  transition: color 0.35s ease;
+}
+
+.home-service-card:hover .home-service-card__content p {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/* TABLET */
+
+@media (max-width: 800px) {
+
+  .home-services {
+    padding: 100px 30px;
+  }
+
+  .home-services__grid {
+    grid-template-columns: 1fr;
+  }
+
+}
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+  .home-services {
+    padding: 80px 20px 100px;
+  }
+
+  .home-services__title {
+    padding: 60px 0;
+  }
+
+  .home-services__title h2 {
+    font-size: 65px;
+  }
+
+  .home-service-card {
+    min-height: 280px;
+
+    padding: 25px;
+  }
+
+  .home-service-card__content h3 {
+    font-size: 45px;
+  }
+
+}

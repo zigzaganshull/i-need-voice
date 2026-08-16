@@ -1,0 +1,20 @@
+:root {
+  --color-background: #f6f1ed;
+  --color-background-dark: #171717;
+
+  --color-text: #111111;
+  --color-text-light: #ffffff;
+  --color-muted: #696969;
+
+  --color-accent: #ff6248;
+  --color-accent-hover: #ed513b;
+
+  --color-border: rgba(0, 0, 0, 0.15);
+
+  --container-width: 1400px;
+
+  --font-main: Arial, Helvetica, sans-serif;
+
+  --transition-fast: 0.25s ease;
+  --transition-normal: 0.4s ease;
+}

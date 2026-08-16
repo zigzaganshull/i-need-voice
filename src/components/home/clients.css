@@ -1,0 +1,186 @@
+.clients {
+  width: 100%;
+
+  padding: 150px 4%;
+
+  background: var(--color-background);
+  color: var(--color-text);
+}
+
+.clients__container {
+  max-width: var(--container-width);
+
+  margin: 0 auto;
+}
+
+/* HEADER */
+
+.clients__header {
+  display: grid;
+
+  grid-template-columns: 25% 75%;
+
+  margin-bottom: 100px;
+}
+
+.clients__label {
+  display: flex;
+  align-items: center;
+
+  gap: 10px;
+
+  height: fit-content;
+
+  font-size: 10px;
+  font-weight: 800;
+
+  letter-spacing: 0.15em;
+}
+
+.clients__label span {
+  width: 7px;
+  height: 7px;
+
+  border-radius: 50%;
+
+  background: var(--color-accent);
+}
+
+.clients__title {
+  font-size: clamp(65px, 7vw, 120px);
+
+  line-height: 0.88;
+
+  letter-spacing: -0.065em;
+}
+
+.clients__title span {
+  color: var(--color-accent);
+}
+
+/* CLIENT GRID */
+
+.clients__grid {
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+
+  border-top: 1px solid var(--color-border);
+  border-left: 1px solid var(--color-border);
+}
+
+.client {
+  height: 190px;
+
+  padding: 25px;
+
+  border-right: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
+
+  display: flex;
+  flex-direction: column;
+
+  justify-content: space-between;
+
+  transition:
+    background 0.3s ease,
+    color 0.3s ease;
+}
+
+.client:hover {
+  background: #171717;
+
+  color: #fff;
+}
+
+.client__number {
+  font-size: 9px;
+
+  color: #777;
+}
+
+.client__name {
+  font-size: clamp(20px, 2vw, 32px);
+
+  font-weight: 800;
+
+  letter-spacing: -0.04em;
+}
+
+/* BOTTOM */
+
+.clients__bottom {
+  margin-top: 70px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.clients__bottom p {
+  font-size: 14px;
+
+  color: var(--color-muted);
+}
+
+.clients__bottom a {
+  width: 230px;
+
+  padding: 18px 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  border-bottom: 1px solid var(--color-text);
+
+  font-size: 10px;
+
+  font-weight: 800;
+
+  letter-spacing: 0.1em;
+}
+
+/* MOBILE */
+
+@media (max-width: 800px) {
+
+  .clients {
+    padding: 100px 20px;
+  }
+
+  .clients__header {
+    grid-template-columns: 1fr;
+
+    gap: 40px;
+
+    margin-bottom: 70px;
+  }
+
+  .clients__title {
+    font-size: clamp(55px, 16vw, 90px);
+  }
+
+  .clients__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .client {
+    height: 150px;
+
+    padding: 20px;
+  }
+
+  .clients__bottom {
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    gap: 35px;
+  }
+
+  .clients__bottom a {
+    width: 100%;
+  }
+
+}

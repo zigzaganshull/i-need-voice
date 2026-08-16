@@ -1,0 +1,122 @@
+.voices-page {
+  width: 100%;
+
+  background: var(--color-background);
+}
+
+.voices-page__hero {
+  min-height: 75vh;
+
+  padding: 180px 4% 100px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: center;
+
+  max-width: var(--container-width);
+
+  margin: 0 auto;
+}
+
+.voices-page__label {
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  margin-bottom: 40px;
+
+  font-size: 10px;
+
+  font-weight: 800;
+
+  letter-spacing: 0.15em;
+}
+
+.voices-page__label span {
+  width: 7px;
+  height: 7px;
+
+  border-radius: 50%;
+
+  background: var(--color-accent);
+}
+
+.voices-page__hero h1 {
+  font-size: clamp(75px, 10vw, 160px);
+
+  line-height: 0.82;
+
+  letter-spacing: -0.07em;
+}
+
+.voices-page__hero h1 span {
+  color: var(--color-accent);
+}
+
+.voices-page__hero p {
+  max-width: 450px;
+
+  margin-top: 50px;
+
+  margin-left: 25%;
+
+  font-size: 15px;
+
+  line-height: 1.7;
+
+  color: var(--color-muted);
+}
+
+.voices-page__catalog {
+  max-width: var(--container-width);
+
+  margin: 0 auto;
+
+  padding: 80px 4% 150px;
+}
+
+.voices-page__results {
+  margin-bottom: 25px;
+
+  font-size: 9px;
+
+  font-weight: 800;
+
+  letter-spacing: 0.12em;
+
+  color: #777;
+}
+
+.voices-page__results span {
+  margin-right: 5px;
+
+  color: var(--color-text);
+
+  font-size: 16px;
+}
+
+@media (max-width: 800px) {
+  .voices-page__hero {
+    min-height: 70vh;
+
+    padding: 150px 20px 80px;
+  }
+
+  .voices-page__hero h1 {
+    font-size: clamp(60px, 17vw, 100px);
+  }
+
+  .voices-page__hero p {
+    margin-left: 0;
+
+    margin-top: 35px;
+  }
+
+  .voices-page__catalog {
+    padding: 60px 20px 100px;
+  }
+}
